@@ -54,7 +54,7 @@ namespace ScriptureMastery2012
                     else if (hw.listIndex.Contains(i))
                     {
                         string hiddenword = new String('_', scriptcopy[i].Length);
-                        Console.WriteLine(hiddenword);
+                        Console.Write(hiddenword + " ");
                     }
                     else
                     {
