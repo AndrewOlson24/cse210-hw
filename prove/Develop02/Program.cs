@@ -1,9 +1,14 @@
 using System;
-
-class Program
+namespace JournalProject
 {
-    static void Main(string[] args)
+    class Program
     {
-        Console.WriteLine("Hello Develop02 World!");
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello Develop02 World!");
+            Journal J = new Journal();
+            J.Menu();
+
+        }
     }
 }
