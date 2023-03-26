@@ -16,8 +16,8 @@ namespace ActivityPortal
         static void Main(string[] args)
         {
             ActivityOperations _activityOps = new ActivityOperations();
-            int SessionTime = 0;
-            string NameOfActivity = "";
+            int _sessionTime = 0;
+            string _nameOfActivity = "";
             while (!_bQuit)
             {
                 MainMenu.DisplayMenu();
@@ -32,8 +32,8 @@ namespace ActivityPortal
                         _breathingActivity._activtyName = "Breathing Activity";
                         _breathingActivity._activityDescription = "This activity will help you relax by walking your through breathing in and out slowly. Clear your mind and focus on your breathing.";
                         _breathingActivity._activtyDuration = _activityOps.PresentActivity(_breathingActivity);
-                        SessionTime = _breathingActivity._activtyDuration;
-                        NameOfActivity = _breathingActivity._activtyName;
+                        _sessionTime = _breathingActivity._activtyDuration;
+                        _nameOfActivity = _breathingActivity._activtyName;
 
                         _breathingActivity.PerformActivity();
 
@@ -47,8 +47,8 @@ namespace ActivityPortal
                         _reflectingActivity._activtyName = "Reflecting Activity";
                         _reflectingActivity._activityDescription = "This activity will help you reflect on times in your life when you have shown strength and resilience. This will help you recognize the power you have and how you can use it in other aspects of your life.";
                         _reflectingActivity._activtyDuration = _activityOps.PresentActivity(_reflectingActivity);
-                        SessionTime = _reflectingActivity._activtyDuration;
-                        NameOfActivity = _reflectingActivity._activtyName;
+                        _sessionTime = _reflectingActivity._activtyDuration;
+                        _nameOfActivity = _reflectingActivity._activtyName;
 
                         _reflectingActivity.PerformActivity();
                         
@@ -62,8 +62,8 @@ namespace ActivityPortal
                         _listingActivity._activtyName = "Listing Activity";
                         _listingActivity._activityDescription = "This activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area.";
                         _listingActivity._activtyDuration = _activityOps.PresentActivity(_listingActivity);
-                        SessionTime = _listingActivity._activtyDuration;
-                        NameOfActivity = _listingActivity._activtyName;
+                        _sessionTime = _listingActivity._activtyDuration;
+                        _nameOfActivity = _listingActivity._activtyName;
 
                         _listingActivity.PerformActivity();
 
@@ -82,7 +82,7 @@ namespace ActivityPortal
             
                 Console.WriteLine("");
                 Console.WriteLine("");
-                Console.WriteLine("You have completed " + SessionTime + " seconds of the " + NameOfActivity + "!" );
+                Console.WriteLine("You have completed " + _sessionTime + " seconds of the " + _nameOfActivity + "!" );
                 Console.WriteLine("---------------------------------------------");
                 Console.WriteLine("-------------THANKS-FOR-PLAYING--------------");
                 Console.WriteLine("---------------------------------------------");
@@ -152,8 +152,8 @@ namespace ActivityPortal
             Console.WriteLine(_currentActivity._activityDescription);
             Console.WriteLine();
             Console.WriteLine("How long in seconds would you like for your session?");
-            int secondsActivity = Convert.ToInt32(Console.ReadLine());
-            return secondsActivity;
+            int _secondsActivity = Convert.ToInt32(Console.ReadLine());
+            return _secondsActivity;
         }
     }
 }

@@ -29,25 +29,25 @@ namespace ActivityPortal
             Console.WriteLine("Get Ready.......");
             this.DisplayAnimation();
             Console.WriteLine("List as many responses to the following prompt: ");
-            Random rand = new Random();
-            int index = rand.Next(_ponder1.Count);
-            string randomItem = _ponder1[index];
-            Console.WriteLine("-----" + randomItem + "-----");
+            Random _rand = new Random();
+            int index = _rand.Next(_ponder1.Count);
+            string _randomItem = _ponder1[index];
+            Console.WriteLine("-----" + _randomItem + "-----");
             Console.WriteLine("");
             Console.WriteLine("You may begin in...");
             this.DisplayCountdown();
 
-            int counter = 0;
+            int _counter = 0;
                 while (DateTime.Now < _futureTime)
                 {
                     
                     Console.Write("> ");
-                    string name = Console.ReadLine();
-                    counter++;
+                    string _name = Console.ReadLine();
+                    _counter++;
                 }
             Console.WriteLine("");
             Console.WriteLine("");
-            Console.WriteLine("you Listed " + counter + " items!!");
+            Console.WriteLine("you Listed " + _counter + " items!!");
             Console.WriteLine("WELL DONE!!!");
 
                 return string.Empty;
