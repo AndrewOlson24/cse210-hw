@@ -3,44 +3,37 @@ using System;
 class Program
 {
     static void Main(string[] args)
-    {
-        Console.WriteLine("Wlecome to the Game of FUN");
-        Console.WriteLine("THis Game has 3 options");
-        Console.WriteLine("1. Breathing Activity");
-        Console.WriteLine("2. Reflection Activty");
-        Console.WriteLine("3. Listing Activity");
-        Console.WriteLine("4. Quit");
-        Console.WriteLine("PLease choose your Activity. ");
-        string playerChos = Console.ReadLine();
-            
-            if(playerChos = 1);
-            {
-            
-            }
-            else if(playerChos = 2);
-            {
-   
-            }
-            else if(playerChos = 3);
-            {
 
-            }
-            else if(playerChos = 4);
+    menuSystem mSys = new menuSystem();
+
+        public class menuSystem
+        {
+            public void displayMenu(int iMenu)
             {
-
+                switch( iMenu )
+                {
+                    case 0:
+                    {
+                        Console.WriteLine("Mindfulness Program:");
+                        Console.WriteLine("--------------------------");
+                        Console.WriteLine("This Activity will help you out when you need to destress");
+                        Console.WriteLine("--------------------------");
+                        Console.WriteLine("\t2. Reflection Activity");
+                        Console.WriteLine("\t3. Breathing Activity");
+                        Console.WriteLine("\t4. Listing Activity");
+                        Console.WriteLine("\t6. Quit" + "\n");
+                        Console.Write("Please choose your option: ");
+                        break;
+                    }
+                }
             }
-           else
-           {
-            Console.WriteLine("Sorry, didn't catch that, Please type a number 1-4");
-           }
-
-
-    }
+        }
+    
 
 public class Reflecting
 {
-prompt = List[]
-Console.WriteLine("This activity will help you reflect on times in your life when you have shown strength and resilience. This will help you recognize the power you have and how you can use it in other aspects of your life.");
+    prompt = List[]
+    Console.WriteLine("This activity will help you reflect on times in your life when you have shown strength and resilience. This will help you recognize the power you have and how you can use it in other aspects of your life.");
 
 
 
@@ -58,19 +51,47 @@ public class Breathing
         
         while(timeseconds >= timeseconds)
         {
-            Console.WriteLine("Breath in.......")
+            Console.WriteLine("Breath in.......");
 
 
-            Console.WriteLine("Breathe out....")
+            Console.WriteLine("Breathe out....");
         }
         Console.Writeline("Thank you for playing");
     }
 }
 public class Listing
 {
+    public string listingAcitivty()
+        {
+            Listing = new List<Listing>();
 
+            Console.Write("This activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area.");
+
+        }
 }
 
-
+public class menuSystem
+    {
+        public void displayMenu(int iMenu)
+        {
+            switch( iMenu )
+            {
+                case 0:
+                {
+                    Console.WriteLine("Mindfulness Program:");
+                    Console.WriteLine("--------------------------");
+                    Console.WriteLine("This Activity will help you out when you need to destress");
+                    Console.WriteLine("--------------------------");
+                    Console.WriteLine("\t2. Reflection Activity");
+                    Console.WriteLine("\t3. Breathing Activity");
+                    Console.WriteLine("\t4. Listing Activity");
+                    Console.WriteLine("\t6. Quit" + "\n");
+                    Console.Write("Please choose your option: ");
+                    break;
+                }
+            }
+        }
+    }
+               
 
 }
