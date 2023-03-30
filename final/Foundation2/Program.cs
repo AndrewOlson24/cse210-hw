@@ -1,9 +1,22 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading;
 
-class Program
+namespace MainOperation
 {
-    static void Main(string[] args)
+    class Program
     {
-        Console.WriteLine("Hello Foundation2 World!");
+
+        
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello Foundation2 World!");
+        }
     }
+
+
+
 }
+
