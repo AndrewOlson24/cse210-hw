@@ -14,7 +14,17 @@ namespace MainOperation
     {
 
 
-        private string _name = "";
+        private string NameOfPerson()
+        {
+            Console.WriteLine("PLease Enter your name: ");
+            string _nameOfCustomer = Console.ReadLine();
+
+            return _nameOfCustomer;
+
+
+        }
+
+            
 
         public class Address
         {
